@@ -28,8 +28,9 @@ Full tables (VLANs, HSRP virtual IPs, all 18 links, access ports, hosts) are in 
 
 ## Requirements
 
-- EVE-NG: `<fill in your EVE-NG version>`
-- Node images: `<fill in the exact switch image names you used>` (the configs use IOS 15.1 syntax; the access and distribution nodes need Layer 2 switchport support, the distribution and core nodes need Layer 3 routing)
+- - EVE-NG: Community Edition 6.0.1-9
+- Node images: Cisco IOL L2 / L3 images (the configs use IOS 15.1 syntax; the access and distribution nodes need Layer 2 switchport support, the distribution and core nodes need Layer 3 routing)
+- Enough RAM/CPU for 12 switch nodes plus VPCS. Nodes boot slowly when the host is short on resources. (the configs use IOS 15.1 syntax; the access and distribution nodes need Layer 2 switchport support, the distribution and core nodes need Layer 3 routing)
 - Enough RAM/CPU for 12 switch nodes plus VPCS. Nodes boot slowly when the host is short on resources.
 
 ## Quick start
