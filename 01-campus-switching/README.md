@@ -1,6 +1,7 @@
 # Campus network lab (EVE-NG): two buildings, HSRP, OSPF
 
-[فارسی](README.fa.md) 
+[Persian version (فارسی)](README.fa.md)
+
 A two-building campus network built and tested in EVE-NG. Each building has a redundant pair of distribution switches running HSRP, the buildings are joined by a routed core, and everything below the core is segmented with VLANs.
 
 The repo contains the final running-config of every device, the addressing plan, and a write-up of the problems hit while building it (including one that is not fully explained).
