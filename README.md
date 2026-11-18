@@ -7,7 +7,7 @@ Hands-on networking labs built and tested in EVE-NG. Every lab has its own folde
 | # | Lab | Topics | Status |
 |---|---|---|---|
 | 01 | [Campus switching](01-campus-switching/) | VLANs, RSTP, trunks, DHCP snooping, port security, HSRP, OSPF between buildings and core | Done |
-| 02 | OSPF | | Planned |
+| 02 | [OSPF areas](02-ospf-areas/) | Stub, totally stub, NSSA and totally NSSA areas; ABR and ASBR roles; summarization; default route origination; redistribution between two OSPF processes | Done |
 | 03 | DMVPN | | Planned |
 | 04 | BGP | | Planned |
 
