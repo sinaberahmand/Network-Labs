@@ -10,9 +10,9 @@
 
 ## این لب چی نشون می‌ده
 
-- **access لایه ۲:** VLAN، RSTP (`rapid-pvst`)، ترانک dot1q با native VLAN 66، DHCP snooping، port security، PortFast همراه BPDU guard، و پورت‌های بلااستفاده که توی VLAN 666 قرار دارن و shutdown هستن.
-- **redundancy توی distribution:** دو سوییچ لایه ۳ برای هر ساختمان، HSRP به‌ازای هر VLAN (شماره‌ی گروه برابر شماره‌ی VLAN)، STP root هماهنگ با سوییچ Active در HSRP، و `preempt` فعال.
-- **core و لینک‌های routed:** OSPF process 1 و area 0، با لینک‌های point-to-point (۱۸ لینک routed، همه `/24`).
+- - &rlm;**access لایه ۲:** VLAN، RSTP (`rapid-pvst`)، ترانک dot1q با native VLAN 66، DHCP snooping، port security، PortFast همراه BPDU guard، و پورت‌های بلااستفاده که توی VLAN 666 قرار دارن و shutdown هستن.
+- - &rlm;**redundancy توی distribution:** دو سوییچ لایه ۳ برای هر ساختمان، HSRP به‌ازای هر VLAN (شماره‌ی گروه برابر شماره‌ی VLAN)، STP root هماهنگ با سوییچ Active در HSRP، و `preempt` فعال.
+- - &rlm;**core و لینک‌های routed:** OSPF process 1 و area 0، با لینک‌های point-to-point (۱۸ لینک routed، همه `/24`).
 - **تست failover:** خرابی distribution توی هر دو ساختمان و خرابی یک نود core (نتیجه‌ها پایین‌تر).
 
 ## ساختار کلی
