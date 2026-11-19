@@ -33,9 +33,9 @@
 
 ## پیش‌نیازها
 
-- EVE-NG: Community Edition 6.0.1-9
+- &rlm;EVE-NG: Community Edition 6.0.1-9
 - ایمیج نودها: روتر Cisco 3725 (Dynamips) با syntax نسخه‌ی IOS 12.4. کانفیگ‌ها از پورت‌های `FastEthernet1/0` تا `1/15` با `no switchport` استفاده می‌کنن، پس روترها توی slot شماره‌ی 1 یک ماژول EtherSwitch ۱۶ پورته لازم دارن.
-- RAM: ۱۲۸ MB برای هر روتر. با ۲۵۶ MB برای هر روتر، ۱۹ نود حافظه‌ی یک VM هفت گیگابایتی رو تموم کرد (توضیح توی [docs/troubleshooting.md](docs/troubleshooting.md)، انگلیسی).
+- &rlm;RAM: ۱۲۸ MB برای هر روتر. با ۲۵۶ MB برای هر روتر، ۱۹ نود حافظه‌ی یک VM هفت گیگابایتی رو تموم کرد (توضیح توی [docs/troubleshooting.md](docs/troubleshooting.md)، انگلیسی).
 - منابع استفاده‌شده توی تست: یک VM برای EVE-NG با ۷ GB RAM و ۴ vCPU. وقتی هر ۱۹ روتر روشن بودن، حدود ۳.۹ GB RAM استفاده می‌شد، load average حدود ۲ بود و هر پروسه‌ی `dynamips` حدود ۷٪ CPU می‌خورد.
 
 ## راه‌اندازی سریع
@@ -69,10 +69,10 @@
 
 ## نکته‌ها
 
-- **WAN یک دامنه‌ی OSPF جداست.** R-1 و R-2 توی area 10 (NSSA) default route نمی‌سازن، پس R-6 از OSPF 1 default route نمی‌گیره. این عمدیه.
-- **loopbackها به‌صورت مسیر `/32` تبلیغ می‌شن** (رفتار پیش‌فرض OSPF برای loopback)، پس `area range` و `summary-address` اون‌ها رو خلاصه می‌کنن.
+- &rlm;**WAN یک دامنه‌ی OSPF جداست.** R-1 و R-2 توی area 10 (NSSA) default route نمی‌سازن، پس R-6 از OSPF 1 default route نمی‌گیره. این عمدیه.
+- &rlm;**loopbackها به‌صورت مسیر `/32` تبلیغ می‌شن** (رفتار پیش‌فرض OSPF برای loopback)، پس `area range` و `summary-address` اون‌ها رو خلاصه می‌کنن.
 - **هر دو روتر R-8 و R-9 یک `summary-address` یکسان دارن**، ولی توی هر NSSA فقط یک ABR (اونی که router-id بالاتر داره) Type 7 رو به Type 5 تبدیل می‌کنه. روی R-1 خلاصه‌ی external از R-9 میاد.
-- **`ip ospf cost` روی یک روتر برگ** فقط مسیر خروجیِ خود همون روتر رو عوض می‌کنه.
+- &rlm;**`ip ospf cost` روی یک روتر برگ** فقط مسیر خروجیِ خود همون روتر رو عوض می‌کنه.
 
 ## ساختار ریپو
 
